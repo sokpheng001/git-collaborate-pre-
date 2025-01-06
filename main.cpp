@@ -23,7 +23,7 @@ void readFile(const std::string& fileName) {
     std::ifstream file(fileName);
     if (!file) {
         std::cerr << "Error: Unable to open file " << fileName << std::endl;
-        loadingDone = true; // Stop animation
+        loadingDone = false; // Stop animation
         return;
     }
 
